@@ -1,6 +1,12 @@
 body {
 	background-color: black;
 	margin: 0;
+	color: white;
+	font-family: helvetica, arial, sans-serif;
+}
+
+a {
+	color: white;
 }
 
 /* Navigation styles */
@@ -18,7 +24,6 @@ nav div {
 
 nav div > a {
 	text-decoration: none;
-	color:white;
 	font-family: "Brush Script MT",sans-serif;
 	font-size: 36px;
 }
@@ -31,8 +36,6 @@ nav ul {
 
 nav ul a {
 	text-decoration: none;
-	color: white;
-	font-family: helvetica, arial, sans-serif;
 	padding: 10px;
 	display: inline-block;
 	font-size: 28px;
@@ -56,17 +59,44 @@ nav ul li {
 }
 
 button {
-	font-size: 50px !important;
-	color: white;
+	font-size: 45px !important;
 	position: absolute;
-	top: 5px;
+	top: 7px;
 	right: 12px;
 	background-color: #004d00;
 	border-style: none;
+	color: white;
 }
 
 /* Main styles */
 
 main {
 	background-image: url("../img/light-at-the-end-of-the-tunnel.jpg");
+}
+
+/* Footer styles */
+
+footer {
+	background-color: #004d00;
+	padding: 10px;
+}
+
+footer p:first-child {
+	float: left;
+}
+
+footer a {
+	float: right;
+	text-decoration: none;
+}
+
+footer i {
+	font-size: 50px !important;
+	margin: 5px;
+}
+
+footer:after {
+	content: '';
+	display: block;
+	clear: both;
 }
