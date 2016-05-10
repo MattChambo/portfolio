@@ -7,12 +7,12 @@ body {
 
 nav {
 	background-color: #004d00;
+	position: relative;
 }
 
 nav div {
 	margin: 0 auto;
-	width: 60%;
-	text-align: center;
+	width: 80%;
 	padding: 15px; 
 }
 
@@ -35,7 +35,7 @@ nav ul a {
 	font-family: helvetica, arial, sans-serif;
 	padding: 10px;
 	display: inline-block;
-	font size: 50px;
+	font-size: 28px;
 	width: 100%;
 	text-align: center;
 }
@@ -55,8 +55,18 @@ nav ul li {
 	border-top: 4px solid black;
 }
 
+button {
+	font-size: 50px !important;
+	color: white;
+	position: absolute;
+	top: 5px;
+	right: 12px;
+	background-color: #004d00;
+	border-style: none;
+}
+
 /* Main styles */
 
 main {
-	background-image: url("img/light-at-the-end-of-the-tunnel.jpg");
+	background-image: url("../img/light-at-the-end-of-the-tunnel.jpg");
 }
