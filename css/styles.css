@@ -11,7 +11,7 @@ a {
 
 /* Navigation styles */
 
-nav {
+body > nav {
 	background-color: #004d00;
 	position: relative;
 }
@@ -56,6 +56,7 @@ nav ul li {
 
 #nav {
 	display: none;
+	background-color: black;
 }
 
 #first {
@@ -76,6 +77,16 @@ button {
 
 main {
 	background-image: url("../img/light-at-the-end-of-the-tunnel.jpg");
+}
+
+main:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.myslider {
+	float: left;
 }
 
 /* Footer styles */
@@ -133,6 +144,7 @@ footer #copyright {
 	#nav {
 		display: block;
 		width: 20%;
+		float: left;
 	}
 	#nav ul {
 		list-style: none;
@@ -152,6 +164,15 @@ footer #copyright {
 		font-size: 50px;
 	}
 
+	.unslider {
+		width: 40%;
+		position: relative;
+
+	}
+
+	.unslider li {
+		margin-left: 10px;
+	}
 }
 
 @media all and (min-width: 650px) {
@@ -171,5 +192,9 @@ footer #copyright {
 	#about {
 		width: 30%;
 		float: right;
+	}
+
+	.my-slider {
+		width: 40%;
 	}
 } 
