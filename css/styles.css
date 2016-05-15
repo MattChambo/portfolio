@@ -54,6 +54,10 @@ nav ul li {
 	background-color: #1e8000;
 }
 
+#nav {
+	display: none;
+}
+
 #first {
 	border-top: 4px solid black;
 }
@@ -85,6 +89,10 @@ footer p:first-child {
 	float: left;
 }
 
+footer #date {
+	float: right;
+}
+
 footer a {
 	float: right;
 	text-decoration: none;
@@ -100,3 +108,68 @@ footer:after {
 	display: block;
 	clear: both;
 }
+
+footer #copyright {
+	display: none;
+}
+
+@media all and (min-width: 550px) {
+	nav ul li{
+		display: none;
+	}
+
+	#nav ul {
+		padding: 0;
+	}
+
+	nav button {
+		display: none;
+	}
+
+	nav div a {
+		font-size: 60px;
+	}
+
+	#nav {
+		display: block;
+		width: 20%;
+	}
+	#nav ul {
+		list-style: none;
+	}
+
+	#nav li {
+		background-color: #1e8000;
+		width: 150px;
+		text-align: center;
+		margin: 20px;
+	}
+
+	#nav a {
+		text-decoration: none;
+		
+		font-family: "Brush Script MT",sans-serif;
+		font-size: 50px;
+	}
+
+}
+
+@media all and (min-width: 650px) {
+	footer #copyright {
+		display: block;
+	}
+	#nav {
+		margin-top: 150px;
+	}
+}
+
+@media all and (min-width: 960px) {
+	nav a {
+		font-size: 70px;
+	}
+
+	#about {
+		width: 30%;
+		float: right;
+	}
+} 
