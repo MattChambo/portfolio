@@ -54,7 +54,7 @@ nav ul li {
 	background-color: #1e8000;
 }
 
-#nav {
+#nav-left {
 	display: none;
 	background-color: black;
 }
@@ -87,12 +87,41 @@ main:after {
 
 .myslider {
 	float: left;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 #about {
 	background-color: rgba(255, 255, 255, 0.3);
 	margin: 5px;
-	padding: 5px;
+	padding: 10px;
+}
+
+form {
+	width: 80%;
+	margin: 0 auto;
+	margin: 10px;
+	margin-top: 50px;
+
+}
+
+form div {
+	margin: 10px;
+}
+
+label {
+	width: 120px;
+	display: inline-block;
+}
+
+#submit {
+	margin-left: 125px;
+	margin-top: 15px;
+	background-color: #dddddd;
+	padding: 8px 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+	font-size: 17px;
 }
 
 /* Footer styles */
@@ -100,6 +129,7 @@ main:after {
 footer {
 	background-color: #004d00;
 	padding: 10px;
+	margin-top: 10px;
 }
 
 footer p:first-child {
@@ -143,43 +173,55 @@ footer #copyright {
 		font-size: 60px;
 	}
 
-	#nav {
+	#nav-left {
 		display: block;
 		width: 250px;
 		float: left;
-		background-color: blue;
 	}
-	#nav ul {
+	#nav-left ul {
 		list-style: none;
 		padding: 0;
 	}
 
-	#nav li {
+	#nav-left li {
 		background-color: #1e8000;
 		width: 150px;
 		text-align: center;
-		margin: 20px;
+		margin: 15px;
 	}
 
-	#nav a {
+	#nav-left a {
 		text-decoration: none;
 		font-family: "Brush Script MT",sans-serif;
 		font-size: 50px;
 	}
 
 	.unslider {
-		width: 50%;
+		width: 70%;
 		position: relative;
+		left: 100px;
 
 	}
 
 	.unslider li {
-		margin-left: 50px;
+		background-color: red;
 	}
 
 	#about {
 		margin-left: 250px;
+		margin-right: 50px;
+		margin-top: 50px;
 	}
+
+	form {
+		width: 80%;
+		margin-left: 100px;
+	}
+
+	#submit {
+		margin-left: 250px;
+	}
+
 }
 
 @media all and (min-width: 550px) {
@@ -193,7 +235,19 @@ footer #copyright {
 	}
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 700px) {
+	#submit {
+		margin-left: 300px;
+	}
+}
+
+@media all and (min-width: 850px) {
+	#about {
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 1200px) {
 	nav a {
 		font-size: 70px;
 	}
@@ -201,7 +255,6 @@ footer #copyright {
 	#about {
 		width: 30%;
 		float: right;
-		margin-top: 150px;
 		margin-right: 50px;
 	}
 
