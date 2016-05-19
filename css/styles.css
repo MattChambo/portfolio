@@ -63,6 +63,19 @@ nav ul li {
 	color: #73e600;
 }
 
+#audio {
+	width: 70%;
+	margin: 0 auto;
+}
+
+audio {
+	margin: 10px;
+}
+
+#audio h2 {
+	font-size: 20px;
+}
+
 #first {
 	border-top: 4px solid black;
 }
@@ -275,6 +288,10 @@ footer #copyright {
 		margin-left: 250px;
 	}
 
+	#audio {
+		width: 30%;
+	}
+
 }
 
 @media all and (min-width: 850px) {
@@ -296,6 +313,7 @@ footer #copyright {
 		width: 30%;
 		float: right;
 		margin-right: 50px;
+		margin-top: 0;
 	}
 
 	.unslider {
@@ -304,5 +322,18 @@ footer #copyright {
 
 	#ideal {
 		width: calc(40% - 20px);
+		margin-top: 70px;
+		float: left;
+		margin-left: 0;
+	}
+
+	#nav-left {
+		padding-bottom: 100px;
+	}
+
+	#audio {
+		float: right;
+		width: 30%;
+		margin-top: -100px;
 	}
 } 
