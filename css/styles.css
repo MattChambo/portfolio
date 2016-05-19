@@ -92,7 +92,8 @@ main:after {
 
 #about {
 	background-color: rgba(255, 255, 255, 0.3);
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding: 10px;
 }
 
@@ -160,6 +161,20 @@ footer #copyright {
 	display: none;
 }
 
+.poem {
+	display: inline-block;
+	text-align: left;
+}
+
+.unslider {
+	background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.unslider li {
+	text-align: center;
+}
+
 @media all and (min-width: 550px) {
 	nav ul li{
 		display: none;
@@ -203,10 +218,7 @@ footer #copyright {
 
 	}
 
-	.unslider li {
-		background-color: red;
-	}
-
+	
 	#about {
 		margin-left: 250px;
 		margin-right: 50px;
@@ -237,8 +249,17 @@ footer #copyright {
 
 @media all and (min-width: 700px) {
 	#submit {
-		margin-left: 300px;
+		margin-left: 0px;
 	}
+}
+
+@media all and (min-width: 834px) {
+
+	.unslider {
+		left: auto;
+		width: calc(50% + 20px);
+	}
+
 }
 
 @media all and (min-width: 850px) {
@@ -252,13 +273,17 @@ footer #copyright {
 		font-size: 70px;
 	}
 
+	#top-nav {
+		margin-bottom: 50px;
+	}
+
 	#about {
 		width: 30%;
 		float: right;
 		margin-right: 50px;
 	}
 
-	.my-slider {
+	.unslider {
 		width: 40%;
 	}
 } 
