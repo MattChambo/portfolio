@@ -73,7 +73,7 @@ audio {
 }
 
 #audio h2 {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 #first {
@@ -272,7 +272,12 @@ footer #copyright {
 
 @media all and (min-width: 700px) {
 	#submit {
-		margin-left: 0px;
+		margin-left: 150px;
+	}
+
+	#form {
+		width: 50%;
+		margin:0 auto;
 	}
 }
 
@@ -297,6 +302,12 @@ footer #copyright {
 @media all and (min-width: 850px) {
 	#about {
 		width: 50%;
+	}
+}
+
+@media all and (min-width: 1050px) {
+	form {
+		width: 40%;
 	}
 }
 
