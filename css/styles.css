@@ -143,6 +143,15 @@ label {
 	font-size: 17px;
 }
 
+#art {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#art h1 {
+	text-align: center;
+}
+
 /* Footer styles */
 
 footer {
@@ -257,6 +266,20 @@ footer #copyright {
 		margin-left: 250px;
 	}
 
+	#art img {
+		margin: 10px;
+		float: right;
+	}
+
+	.nav-left-art {
+		width: 200px !important;
+	}
+
+	#art {
+	width: 90%;
+	}
+
+
 }
 
 @media all and (min-width: 550px) {
@@ -268,6 +291,13 @@ footer #copyright {
 		margin-right: 100px;
 		margin-bottom: 50px
 	}
+}
+
+@media all and (min-width: 600px) {
+	.nav-left-art {
+		margin-bottom: 800px;
+	}
+
 }
 
 @media all and (min-width: 700px) {
@@ -309,6 +339,9 @@ footer #copyright {
 	form {
 		width: 40%;
 	}
+	.nav-left-art {
+		margin-bottom: 400px;
+	}
 }
 
 @media all and (min-width: 1200px) {
@@ -347,4 +380,9 @@ footer #copyright {
 		width: 30%;
 		margin-top: -100px;
 	}
+
+	#art img {
+		margin: 20px;
+	}
+
 } 
