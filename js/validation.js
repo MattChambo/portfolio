@@ -15,10 +15,8 @@ submitForm.onsubmit = function(event) {
  		}
  		if(valid === true) {
  			submitForm.style.display = "none";
- 			document.querySelector("#form h1").innerHTML = "Success";
+ 			document.querySelector("#form h1").innerHTML = "Your poetry has been submited";
  		}
-
-
 }
 
 var firstName = document.querySelector("#first-name");
