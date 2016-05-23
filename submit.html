@@ -55,26 +55,26 @@
 			<div id="form">
 			<h1>Submit your poetry</h1>
 			
-				<form action="register.php" method="get" id="submision">
+				<form action="#" method="get" id="submision">
 					<div>
 						<label for="first-name">First Name</label>
-						<input type="text" id="first-name">
-						<span id="first-name-message"></span>
+						<input type="text" id="first-name" class="inputField">
+						<div id="first-name-message"></div>
 					</div>
 					<div>
 						<label for="last-name">Last Name</label>
-						<input type="text" id="last-name">
-						<span id="last-name-message"></span>
+						<input type="text" id="last-name" class="inputField">
+						<div id="last-name-message"></div>
 					</div>
 					<div>
 						<label for="email">E-Mail</label>
-						<input type="email" id="email">
-						<span id="email-message"></span>
+						<input type="email" id="email" class="inputField">
+						<div id="email-message"></div>
 					</div>
 					<div>
-						<label for="post">Submit your poetry here<br></label>
-						<textarea name="post" id="post" cols="35" rows="30"></textarea>
-						<span id="post-message"></span>
+						<label for="post">Submit your poetry here</label><br>
+						<textarea name="post" id="post" cols="35" rows="30" class="inputField"></textarea>
+						<div id="post-message"></div>
 					</div>
 					<input type="submit" value="submit" id="submit">
 				</form>
@@ -87,11 +87,11 @@
 
 
 
-
+		<script src="js/patterns.js"></script>
+		<script src="js/validation.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="js/navigation.js"></script>
 		<script src="js/local-storage-form.js"></script>
-		<script src="js/patterns.js"></script>
-		<script src="js/validation.js"></script>
+		
 	</body>
 </html>
