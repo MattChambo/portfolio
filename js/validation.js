@@ -4,6 +4,8 @@ submitForm.onsubmit = function(event) {
   		// Stop the form from submitting
  		event.preventDefault();
 
+ 		// Get reference to all fields and check to see if all fields have been filled out, display a success message if all fields have been filled in correctly 
+
  		var allFields = document.querySelectorAll(".inputField");
  		var valid = false;
  		for(var i=0; i<allFields.length; i++) {
@@ -19,6 +21,8 @@ submitForm.onsubmit = function(event) {
  		}
 }
 
+// Get references to the input fields
+
 var firstName = document.querySelector("#first-name");
 var firstNameMessage = document.querySelector("#first-name-message");
 var lastName = document.querySelector("#last-name");
@@ -28,6 +32,8 @@ var emailMessage = document.querySelector("#email-message");
 var post = document.querySelector("#post");
 var postMessage = document.querySelector("#post-message");
 
+
+// Check to see if first name is correct length and contains only valid characters and display message to user if the name is invalid
 
 firstName.onblur = function() {
 	
@@ -45,6 +51,7 @@ firstName.onblur = function() {
 
 }
 
+// Check to see if last name is correct length and contains only valid characters and display message to user if the name is invalid
 
 lastName.onblur = function() {
 	
@@ -61,6 +68,8 @@ lastName.onblur = function() {
 	}
 }
 
+// Check to see if email address is formated correctly, is an appropriate length and contains only valid characters and then display message to user if the email address is invalid
+
 email.onblur = function() {
 	
 	if( this.value.length < 5) {
@@ -75,6 +84,8 @@ email.onblur = function() {
 		emailMessage.innerHTML = "Invalid email address";
 	}
 }
+
+// Check to see if text field is an apropriate length and only contains valid characters and display a message if the text is invalid
 
 post.onblur = function() {
 	
