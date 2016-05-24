@@ -1,24 +1,26 @@
-var submitForm = document.querySelector("#submision");
+var submitForm = document.querySelector("#submission");
 submitForm.onsubmit = function(event) {
-	
-  		// Stop the form from submitting
- 		event.preventDefault();
 
  		// Get reference to all fields and check to see if all fields have been filled out, display a success message if all fields have been filled in correctly 
 
  		var allFields = document.querySelectorAll(".inputField");
+
  		var valid = false;
- 		for(var i=0; i<allFields.length; i++) {
+ 		for(var i=0; i < allFields.length; i++) {
  			if( allFields[i].value !== '' ) {
+ 				console.log(allFields[i]);
   				valid = true;
  			} else {
  				valid = false;
+ 				break;
  			}
  		}
  		if(valid === true) {
  			submitForm.style.display = "none";
  			document.querySelector("#form h1").innerHTML = "Your poetry has been submited";
  		}
+ 		// Stop the form from submitting
+ 		event.preventDefault();
 }
 
 // Get references to the input fields

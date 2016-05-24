@@ -90,10 +90,6 @@ button {
 	color: white;
 }
 
-span {
-	color: white;
-}
-
 /* Main styles */
 
 main {
@@ -152,6 +148,10 @@ label {
 	border: 1px solid black;
 	cursor: pointer;
 	font-size: 17px;
+}
+
+.message {
+	font-size: 13px;
 }
 
 #art {
